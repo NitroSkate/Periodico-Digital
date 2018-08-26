@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Inscripción al portal</title>
+    </head>
+    <body>
+        <center><h1>Formulario de inscripción</h1></center>
+        <form action="#" method="GET">
+        <article>
+            <section>
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <div>
+                        <label for="dui">DUI:</label>
+                        <input type="text" name="dui" id="dui" placeholder="04813412-8" pattern="[0-9]{8}-[0-9]{1}" required>
+                        <label for="fn">Nombre:</label>
+                        <input type="text" name="fn" id="fn" placeholder="First Name" required>
+                        <label for="ln">Apellido:</label>
+                        <input type="text" name="ln" id="ln" placeholder="Last Name" required>
+                        <label for="gen">Sexo:</label>
+                        <input type="radio" name="gen" id="gen" checked>M
+                        <input type="radio" name="gen" id="gen">F
+                    </div>
+                    <br>
+                    <div>
+                        <label for="cn">Celular:</label>
+                        <input type="text" name="cn" id="cn" pattern="[0-9]{4}-[0-9]{4}" required>
+                        <label for="bd">Fecha de nacimiento:</label>
+                        <input type="date" name="bd" id="bd" max="2000-01-01" required>
+                        <label for="img">Image</label>
+                        <input type="file" name="img" id="img" required>
+                    </div>
+                </fieldset>
+            </section>
+        </article>
+        <br>
+        <br>
+        <article>
+            <section>
+                <fieldset>
+                    <legend>Experiencia</legend>
+                    <textarea rows="10"cols="225" placeholder="Experiencia" required></textarea>
+                </fieldset>
+            </section>
+        </article>
+        <br>
+        <br>
+        <article>
+            <section>
+                <fieldset>
+                        <legend>Comentarios extra</legend>
+                        <textarea rows="10"cols="225" placeholder="Comente aquí" required></textarea>
+                </fieldset>
+            </section>
+        </article>
+        <br>
+        <br>
+        <article>
+            <fieldset>
+                <legend>Intereses en noticias</legend>
+                <section>
+                    <fieldset>
+                        <legend>Programming Languages</legend>
+                        <input type="checkbox" name="check[]">Racing
+                        <input type="checkbox" name="check[]">Gaming
+                        <input type="checkbox" name="check[]">Noticias
+                        <input type="checkbox" name="check[]">Tendencias
+                        <input type="checkbox" name="check[]">Cine
+                    </fieldset>
+                </section>
+                <br>
+        </article>
+        <br>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="button" value="Cancelar">
+        </div>
+        </form>
+    </body>
+</html>
